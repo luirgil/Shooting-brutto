@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Shooting",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CopyDLLs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CopyDLLs-Debug-c20a0f5502d7d4bb0bc8.json",
+					"name" : "CopyDLLs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DoxygenDocumentation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DoxygenDocumentation-Debug-a8116b987e49d27303e9.json",
+					"name" : "DoxygenDocumentation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Shooting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Shooting-Debug-2daa53e7370abf3323a0.json",
+					"name" : "Shooting",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+		"source" : "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

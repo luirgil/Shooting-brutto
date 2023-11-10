@@ -1,0 +1,138 @@
+\doxysection{Bullet Class Reference}
+\hypertarget{class_bullet}{}\label{class_bullet}\index{Bullet@{Bullet}}
+
+
+Rappresenta un proiettile nel gioco.  
+
+
+
+
+{\ttfamily \#include $<$bullet.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bullet_a569a553f62d294d1f124358e31da9733}{Bullet}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y, int bullet\+Speed, int SCREENWIDTH, int SCREENHEIGHT, const char \texorpdfstring{$\ast$}{*}image\+Path)
+\begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{class_bullet}{Bullet}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_a7a21e5f9176f5b30abde3279cffe4237}{Update}} (int screen\+Width)
+\begin{DoxyCompactList}\small\item\em Aggiorna la posizione del proiettile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bullet_ac41272ca6ff50d425e26ac5d01e5af4a}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Disegna il proiettile sul renderer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_bullet_a33daffc5bfc9f9aed0fddbe39add5953}{position}}
+\item 
+int \mbox{\hyperlink{class_bullet_a110bd4348fc7547125b4ec4bbf94d5f5}{speed}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_bullet_a31db736d795132660a8fa55400b723ab}{texture}}
+\item 
+bool \mbox{\hyperlink{class_bullet_a0dee6bed7c3a0ecba4861723f8e462e7}{is\+Active}}
+\item 
+bool \mbox{\hyperlink{class_bullet_a10bf38b081c3e2f99685a8bd30b243bd}{can\+Damage}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rappresenta un proiettile nel gioco. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_bullet_a569a553f62d294d1f124358e31da9733}\label{class_bullet_a569a553f62d294d1f124358e31da9733} 
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\index{Bullet@{Bullet}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Bullet()}{Bullet()}}
+{\footnotesize\ttfamily Bullet\+::\+Bullet (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{bullet\+Speed,  }\item[{int}]{SCREENWIDTH,  }\item[{int}]{SCREENHEIGHT,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{image\+Path }\end{DoxyParamCaption})}
+
+
+
+Costruttore della classe \doxylink{class_bullet}{Bullet}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em x} & La coordinata X iniziale del proiettile. \\
+\hline
+{\em y} & La coordinata Y iniziale del proiettile. \\
+\hline
+{\em bullet\+Speed} & La velocità del proiettile. \\
+\hline
+{\em SCREENWIDTH} & La larghezza della finestra di gioco. \\
+\hline
+{\em SCREENHEIGHT} & L\textquotesingle{}altezza della finestra di gioco. \\
+\hline
+{\em image\+Path} & Il percorso del file BMP contenente l\textquotesingle{}immagine del proiettile. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_bullet_ac41272ca6ff50d425e26ac5d01e5af4a}\label{class_bullet_ac41272ca6ff50d425e26ac5d01e5af4a} 
+\index{Bullet@{Bullet}!Render@{Render}}
+\index{Render@{Render}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Bullet\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Disegna il proiettile sul renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_bullet_a7a21e5f9176f5b30abde3279cffe4237}\label{class_bullet_a7a21e5f9176f5b30abde3279cffe4237} 
+\index{Bullet@{Bullet}!Update@{Update}}
+\index{Update@{Update}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Bullet\+::\+Update (\begin{DoxyParamCaption}\item[{int}]{screen\+Width }\end{DoxyParamCaption})}
+
+
+
+Aggiorna la posizione del proiettile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Width} & La larghezza della finestra di gioco. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_bullet_a10bf38b081c3e2f99685a8bd30b243bd}\label{class_bullet_a10bf38b081c3e2f99685a8bd30b243bd} 
+\index{Bullet@{Bullet}!canDamage@{canDamage}}
+\index{canDamage@{canDamage}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{canDamage}{canDamage}}
+{\footnotesize\ttfamily bool Bullet\+::can\+Damage}
+
+Flag che indica se il proiettile può infliggere danni. \Hypertarget{class_bullet_a0dee6bed7c3a0ecba4861723f8e462e7}\label{class_bullet_a0dee6bed7c3a0ecba4861723f8e462e7} 
+\index{Bullet@{Bullet}!isActive@{isActive}}
+\index{isActive@{isActive}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily bool Bullet\+::is\+Active}
+
+Flag che indica se il proiettile è attivo o meno. \Hypertarget{class_bullet_a33daffc5bfc9f9aed0fddbe39add5953}\label{class_bullet_a33daffc5bfc9f9aed0fddbe39add5953} 
+\index{Bullet@{Bullet}!position@{position}}
+\index{position@{position}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Bullet\+::position}
+
+La posizione del proiettile sullo schermo. \Hypertarget{class_bullet_a110bd4348fc7547125b4ec4bbf94d5f5}\label{class_bullet_a110bd4348fc7547125b4ec4bbf94d5f5} 
+\index{Bullet@{Bullet}!speed@{speed}}
+\index{speed@{speed}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily int Bullet\+::speed}
+
+La velocità del proiettile. \Hypertarget{class_bullet_a31db736d795132660a8fa55400b723ab}\label{class_bullet_a31db736d795132660a8fa55400b723ab} 
+\index{Bullet@{Bullet}!texture@{texture}}
+\index{texture@{texture}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Bullet\+::texture}
+
+La texture del proiettile. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/bullet/\mbox{\hyperlink{bullet_8hpp}{bullet.\+hpp}}\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/bullet/bullet.\+cpp\end{DoxyCompactItemize}

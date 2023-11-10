@@ -1,0 +1,7 @@
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/Shooting.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/CopyDLLs.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/DoxygenDocumentation.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/package.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/package_source.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/edit_cache.dir
+C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build/CMakeFiles/rebuild_cache.dir

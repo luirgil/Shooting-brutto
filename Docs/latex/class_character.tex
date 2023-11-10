@@ -1,0 +1,128 @@
+\doxysection{Character Class Reference}
+\hypertarget{class_character}{}\label{class_character}\index{Character@{Character}}
+
+
+Rappresenta il personaggio del giocatore nel gioco.  
+
+
+
+
+{\ttfamily \#include $<$character.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_character_a92783d39149bd9898f2fd6514a6c20ab}{update\+Life\+Bar}} (int n)
+\begin{DoxyCompactList}\small\item\em Aggiorna la barra della vita del personaggio. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_character_a5b72b6dd1967692357f1ef3751face15}{Check\+Bullet\+Collision}} (\mbox{\hyperlink{class_enemy}{Enemy}} \&enemy)
+\begin{DoxyCompactList}\small\item\em Verifica la collisione del personaggio con i proiettili nemici. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_character_a4f20c8fb02c7d371fd749657d2efdf41}{position}}
+\item 
+\mbox{\hyperlink{class_object}{Object}} \mbox{\hyperlink{class_character_ab2887adba0146e3cff1a8b7c2d3babdd}{proprieties}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $>$ \mbox{\hyperlink{class_character_a29239bc74911b56c9ee4be5e5d9f90f4}{bullets}}
+\item 
+\mbox{\hyperlink{class_life_bar}{Life\+Bar}} \mbox{\hyperlink{class_character_a08b07c49aca2039191eeb7f57d9399bc}{lifebar}}
+\item 
+bool \mbox{\hyperlink{class_character_ac2bc87a143f95584f353d61f7216f0e6}{shooted}}
+\item 
+bool \mbox{\hyperlink{class_character_aa89e323c2e13a31ddba73b9a2befd812}{run}}
+\item 
+bool \mbox{\hyperlink{class_character_afa5f8ac57a8b67e63a8d618d7480110e}{can\+Shoot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rappresenta il personaggio del giocatore nel gioco. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_character_a5b72b6dd1967692357f1ef3751face15}\label{class_character_a5b72b6dd1967692357f1ef3751face15} 
+\index{Character@{Character}!CheckBulletCollision@{CheckBulletCollision}}
+\index{CheckBulletCollision@{CheckBulletCollision}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{CheckBulletCollision()}{CheckBulletCollision()}}
+{\footnotesize\ttfamily bool Character\+::\+Check\+Bullet\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} \&}]{enemy }\end{DoxyParamCaption})}
+
+
+
+Verifica la collisione del personaggio con i proiettili nemici. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Il nemico con cui verificare la collisione. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se c\textquotesingle{}è una collisione, altrimenti False. 
+\end{DoxyReturn}
+\Hypertarget{class_character_a92783d39149bd9898f2fd6514a6c20ab}\label{class_character_a92783d39149bd9898f2fd6514a6c20ab} 
+\index{Character@{Character}!updateLifeBar@{updateLifeBar}}
+\index{updateLifeBar@{updateLifeBar}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{updateLifeBar()}{updateLifeBar()}}
+{\footnotesize\ttfamily int Character\+::update\+Life\+Bar (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Aggiorna la barra della vita del personaggio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & La quantità da rimuovere dalla barra della vita. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se la vita del personaggio è ancora positiva, altrimenti 0. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_character_a29239bc74911b56c9ee4be5e5d9f90f4}\label{class_character_a29239bc74911b56c9ee4be5e5d9f90f4} 
+\index{Character@{Character}!bullets@{bullets}}
+\index{bullets@{bullets}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{bullets}{bullets}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_bullet}{Bullet}}$>$ Character\+::bullets}
+
+Vettore contenente i proiettili sparati dal personaggio. \Hypertarget{class_character_afa5f8ac57a8b67e63a8d618d7480110e}\label{class_character_afa5f8ac57a8b67e63a8d618d7480110e} 
+\index{Character@{Character}!canShoot@{canShoot}}
+\index{canShoot@{canShoot}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{canShoot}{canShoot}}
+{\footnotesize\ttfamily bool Character\+::can\+Shoot}
+
+Determina se il personaggio può sparare. \Hypertarget{class_character_a08b07c49aca2039191eeb7f57d9399bc}\label{class_character_a08b07c49aca2039191eeb7f57d9399bc} 
+\index{Character@{Character}!lifebar@{lifebar}}
+\index{lifebar@{lifebar}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{lifebar}{lifebar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_life_bar}{Life\+Bar}} Character\+::lifebar}
+
+La barra della vita del personaggio. \Hypertarget{class_character_a4f20c8fb02c7d371fd749657d2efdf41}\label{class_character_a4f20c8fb02c7d371fd749657d2efdf41} 
+\index{Character@{Character}!position@{position}}
+\index{position@{position}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Character\+::position}
+
+La posizione del personaggio sullo schermo. \Hypertarget{class_character_ab2887adba0146e3cff1a8b7c2d3babdd}\label{class_character_ab2887adba0146e3cff1a8b7c2d3babdd} 
+\index{Character@{Character}!proprieties@{proprieties}}
+\index{proprieties@{proprieties}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{proprieties}{proprieties}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_object}{Object}} Character\+::proprieties}
+
+Le proprietà grafiche del personaggio. \Hypertarget{class_character_aa89e323c2e13a31ddba73b9a2befd812}\label{class_character_aa89e323c2e13a31ddba73b9a2befd812} 
+\index{Character@{Character}!run@{run}}
+\index{run@{run}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily bool Character\+::run}
+
+Flag che indica se il personaggio stà correndo. \Hypertarget{class_character_ac2bc87a143f95584f353d61f7216f0e6}\label{class_character_ac2bc87a143f95584f353d61f7216f0e6} 
+\index{Character@{Character}!shooted@{shooted}}
+\index{shooted@{shooted}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{shooted}{shooted}}
+{\footnotesize\ttfamily bool Character\+::shooted}
+
+Flag che indica se il personaggio è stato colpito da un proiettile nemico. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/character/\mbox{\hyperlink{character_8hpp}{character.\+hpp}}\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/character/character.\+cpp\end{DoxyCompactItemize}

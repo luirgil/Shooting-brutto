@@ -1,0 +1,245 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{class_enemy}{}\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Rappresenta un nemico nel gioco.  
+
+
+
+
+{\ttfamily \#include $<$enemy.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a5afb5b15e60ab4a32abde436a579a1be}{Enemy}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int x, int y, int bullet\+Speed, int \mbox{\hyperlink{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3}{SCREENWIDTH}}, int \mbox{\hyperlink{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0}{SCREENHEIGHT}}, const char \texorpdfstring{$\ast$}{*}image\+Path)
+\begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{class_enemy}{Enemy}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a49ad94a75be6cf3956565704b6d53c90}{Shoot\+Bullet}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, const char \texorpdfstring{$\ast$}{*}image\+Path)
+\begin{DoxyCompactList}\small\item\em Fa sparare un proiettile al nemico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ad562c24d8ba0e6bdaf85f045ef03fe8d}{Update\+Bullet}} (int screen\+Width)
+\begin{DoxyCompactList}\small\item\em Aggiorna la posizione dei proiettili sparati dal nemico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_affd7dd3883c7bfede0b7c4c0fe95909d}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\begin{DoxyCompactList}\small\item\em Disegna il nemico sul renderer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_a9c341849286f5dd446b73b5eb646fc80}{Check\+Bullet\+Collision\+Enemy}} (\mbox{\hyperlink{class_character}{Character}} \&character)
+\begin{DoxyCompactList}\small\item\em Verifica la collisione tra i proiettili del personaggio e il nemico. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a354e403b5b4a4bde02990a22a471924c}{update\+Life\+Bar}} (int n)
+\begin{DoxyCompactList}\small\item\em Aggiorna la barra della vita del nemico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_enemy_a5b27996c6bd6d4b9e6d05a34c1394ed7}{last\+Shot\+Time\+Enemy}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{class_enemy_ac364f2ddf130c8622889deca0b6ba4d0}{position}}
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_enemy_aff58327574bd0e2b496d9d4fb3609dfd}{texture}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_bullet}{Bullet}} $>$ \mbox{\hyperlink{class_enemy_aa6906ce0f0c1ac033997feacb17978d9}{bullets}}
+\item 
+bool \mbox{\hyperlink{class_enemy_a251000c8351c354a835601e9fe2d57d0}{can\+Shoot}}
+\item 
+int \mbox{\hyperlink{class_enemy_a6091c94dbb2017ae60c8e513e6a66be1}{speed}}
+\item 
+int \mbox{\hyperlink{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3}{SCREENWIDTH}}
+\item 
+int \mbox{\hyperlink{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0}{SCREENHEIGHT}}
+\item 
+\mbox{\hyperlink{class_life_bar}{Life\+Bar}} \mbox{\hyperlink{class_enemy_ae6da4894d4710169f9f15ee862e3a362}{lifebar}}
+\item 
+bool \mbox{\hyperlink{class_enemy_a33b786508e49b55775c78066992b47af}{delay\+Shoot\+Enemy\+Bool}}
+\item 
+int \mbox{\hyperlink{class_enemy_a392804ac6c25bc46835348ecbedf0592}{delay\+Shoot\+Enemy}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rappresenta un nemico nel gioco. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_enemy_a5afb5b15e60ab4a32abde436a579a1be}\label{class_enemy_a5afb5b15e60ab4a32abde436a579a1be} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{bullet\+Speed,  }\item[{int}]{SCREENWIDTH,  }\item[{int}]{SCREENHEIGHT,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{image\+Path }\end{DoxyParamCaption})}
+
+
+
+Costruttore della classe \doxylink{class_enemy}{Enemy}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em x} & La coordinata X iniziale del nemico. \\
+\hline
+{\em y} & La coordinata Y iniziale del nemico. \\
+\hline
+{\em bullet\+Speed} & La velocità dei proiettili sparati dal nemico. \\
+\hline
+{\em SCREENWIDTH} & La larghezza della finestra di gioco. \\
+\hline
+{\em SCREENHEIGHT} & L\textquotesingle{}altezza della finestra di gioco. \\
+\hline
+{\em image\+Path} & Il percorso del file BMP contenente l\textquotesingle{}immagine del nemico. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_a9c341849286f5dd446b73b5eb646fc80}\label{class_enemy_a9c341849286f5dd446b73b5eb646fc80} 
+\index{Enemy@{Enemy}!CheckBulletCollisionEnemy@{CheckBulletCollisionEnemy}}
+\index{CheckBulletCollisionEnemy@{CheckBulletCollisionEnemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{CheckBulletCollisionEnemy()}{CheckBulletCollisionEnemy()}}
+{\footnotesize\ttfamily bool Enemy\+::\+Check\+Bullet\+Collision\+Enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_character}{Character}} \&}]{character }\end{DoxyParamCaption})}
+
+
+
+Verifica la collisione tra i proiettili del personaggio e il nemico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & Il personaggio con cui verificare la collisione. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True se c\textquotesingle{}è una collisione, altrimenti False. 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_affd7dd3883c7bfede0b7c4c0fe95909d}\label{class_enemy_affd7dd3883c7bfede0b7c4c0fe95909d} 
+\index{Enemy@{Enemy}!Render@{Render}}
+\index{Render@{Render}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Enemy\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Disegna il nemico sul renderer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a49ad94a75be6cf3956565704b6d53c90}\label{class_enemy_a49ad94a75be6cf3956565704b6d53c90} 
+\index{Enemy@{Enemy}!ShootBullet@{ShootBullet}}
+\index{ShootBullet@{ShootBullet}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{ShootBullet()}{ShootBullet()}}
+{\footnotesize\ttfamily void Enemy\+::\+Shoot\+Bullet (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{image\+Path }\end{DoxyParamCaption})}
+
+
+
+Fa sparare un proiettile al nemico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em image\+Path} & Il percorso del file BMP contenente l\textquotesingle{}immagine del proiettile. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_ad562c24d8ba0e6bdaf85f045ef03fe8d}\label{class_enemy_ad562c24d8ba0e6bdaf85f045ef03fe8d} 
+\index{Enemy@{Enemy}!UpdateBullet@{UpdateBullet}}
+\index{UpdateBullet@{UpdateBullet}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{UpdateBullet()}{UpdateBullet()}}
+{\footnotesize\ttfamily void Enemy\+::\+Update\+Bullet (\begin{DoxyParamCaption}\item[{int}]{screen\+Width }\end{DoxyParamCaption})}
+
+
+
+Aggiorna la posizione dei proiettili sparati dal nemico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Width} & La larghezza della finestra di gioco. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a354e403b5b4a4bde02990a22a471924c}\label{class_enemy_a354e403b5b4a4bde02990a22a471924c} 
+\index{Enemy@{Enemy}!updateLifeBar@{updateLifeBar}}
+\index{updateLifeBar@{updateLifeBar}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateLifeBar()}{updateLifeBar()}}
+{\footnotesize\ttfamily int Enemy\+::update\+Life\+Bar (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Aggiorna la barra della vita del nemico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & La quantità da rimuovere dalla barra della vita. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 se la vita del nemico è ancora positiva, altrimenti 0. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_enemy_aa6906ce0f0c1ac033997feacb17978d9}\label{class_enemy_aa6906ce0f0c1ac033997feacb17978d9} 
+\index{Enemy@{Enemy}!bullets@{bullets}}
+\index{bullets@{bullets}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{bullets}{bullets}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_bullet}{Bullet}}$>$ Enemy\+::bullets}
+
+Vettore contenente i proiettili sparati dal nemico. \Hypertarget{class_enemy_a251000c8351c354a835601e9fe2d57d0}\label{class_enemy_a251000c8351c354a835601e9fe2d57d0} 
+\index{Enemy@{Enemy}!canShoot@{canShoot}}
+\index{canShoot@{canShoot}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{canShoot}{canShoot}}
+{\footnotesize\ttfamily bool Enemy\+::can\+Shoot}
+
+Determina se il nemico può sparare. \Hypertarget{class_enemy_a392804ac6c25bc46835348ecbedf0592}\label{class_enemy_a392804ac6c25bc46835348ecbedf0592} 
+\index{Enemy@{Enemy}!delayShootEnemy@{delayShootEnemy}}
+\index{delayShootEnemy@{delayShootEnemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{delayShootEnemy}{delayShootEnemy}}
+{\footnotesize\ttfamily int Enemy\+::delay\+Shoot\+Enemy}
+
+Il ritardo tra i colpi del nemico. \Hypertarget{class_enemy_a33b786508e49b55775c78066992b47af}\label{class_enemy_a33b786508e49b55775c78066992b47af} 
+\index{Enemy@{Enemy}!delayShootEnemyBool@{delayShootEnemyBool}}
+\index{delayShootEnemyBool@{delayShootEnemyBool}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{delayShootEnemyBool}{delayShootEnemyBool}}
+{\footnotesize\ttfamily bool Enemy\+::delay\+Shoot\+Enemy\+Bool}
+
+Flag per gestire il ritardo tra i colpi del nemico. \Hypertarget{class_enemy_a5b27996c6bd6d4b9e6d05a34c1394ed7}\label{class_enemy_a5b27996c6bd6d4b9e6d05a34c1394ed7} 
+\index{Enemy@{Enemy}!lastShotTimeEnemy@{lastShotTimeEnemy}}
+\index{lastShotTimeEnemy@{lastShotTimeEnemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{lastShotTimeEnemy}{lastShotTimeEnemy}}
+{\footnotesize\ttfamily int Enemy\+::last\+Shot\+Time\+Enemy}
+
+Il momento in cui il nemico ha sparato l\textquotesingle{}ultimo proiettile. \Hypertarget{class_enemy_ae6da4894d4710169f9f15ee862e3a362}\label{class_enemy_ae6da4894d4710169f9f15ee862e3a362} 
+\index{Enemy@{Enemy}!lifebar@{lifebar}}
+\index{lifebar@{lifebar}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{lifebar}{lifebar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_life_bar}{Life\+Bar}} Enemy\+::lifebar}
+
+La barra della vita del nemico. \Hypertarget{class_enemy_ac364f2ddf130c8622889deca0b6ba4d0}\label{class_enemy_ac364f2ddf130c8622889deca0b6ba4d0} 
+\index{Enemy@{Enemy}!position@{position}}
+\index{position@{position}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Enemy\+::position}
+
+La posizione del nemico sullo schermo. \Hypertarget{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0}\label{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0} 
+\index{Enemy@{Enemy}!SCREENHEIGHT@{SCREENHEIGHT}}
+\index{SCREENHEIGHT@{SCREENHEIGHT}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{SCREENHEIGHT}{SCREENHEIGHT}}
+{\footnotesize\ttfamily int Enemy\+::\+SCREENHEIGHT}
+
+L\textquotesingle{}altezza della finestra di gioco. \Hypertarget{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3}\label{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3} 
+\index{Enemy@{Enemy}!SCREENWIDTH@{SCREENWIDTH}}
+\index{SCREENWIDTH@{SCREENWIDTH}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{SCREENWIDTH}{SCREENWIDTH}}
+{\footnotesize\ttfamily int Enemy\+::\+SCREENWIDTH}
+
+La larghezza della finestra di gioco. \Hypertarget{class_enemy_a6091c94dbb2017ae60c8e513e6a66be1}\label{class_enemy_a6091c94dbb2017ae60c8e513e6a66be1} 
+\index{Enemy@{Enemy}!speed@{speed}}
+\index{speed@{speed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily int Enemy\+::speed}
+
+La velocità del nemico. \Hypertarget{class_enemy_aff58327574bd0e2b496d9d4fb3609dfd}\label{class_enemy_aff58327574bd0e2b496d9d4fb3609dfd} 
+\index{Enemy@{Enemy}!texture@{texture}}
+\index{texture@{texture}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture\texorpdfstring{$\ast$}{*} Enemy\+::texture}
+
+La texture del nemico. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/enemy/\mbox{\hyperlink{enemy_8hpp}{enemy.\+hpp}}\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/enemy/enemy.\+cpp\end{DoxyCompactItemize}

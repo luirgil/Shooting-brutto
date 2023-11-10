@@ -1,0 +1,325 @@
+\doxysection{C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/sottoprogrammi/sottoprogrammi.hpp File Reference}
+\hypertarget{sottoprogrammi_8hpp}{}\label{sottoprogrammi_8hpp}\index{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/sottoprogrammi/sottoprogrammi.hpp@{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/sottoprogrammi/sottoprogrammi.hpp}}
+
+
+Contiene le dichiarazioni delle funzioni ausiliarie.  
+
+
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \"{}../object/object.\+hpp\"{}}\newline
+{\ttfamily \#include \"{}../character/character.\+hpp\"{}}\newline
+{\ttfamily \#include \"{}../enemy/enemy.\+hpp\"{}}\newline
+{\ttfamily \#include $<$SDL\+\_\+ttf.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sottoprogrammi_8hpp_a26fffa61de74b3723ea64060bb5f7402}{free\+\_\+args}} (int num\+\_\+args,...)
+\begin{DoxyCompactList}\small\item\em Libera la memoria allocata per gli argomenti passati alle funzioni. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{sottoprogrammi_8hpp_ae76c218d4b1a1e51f2e926ef840d098d}{Inizialize\+Position}} (SDL\+\_\+\+Rect position)
+\begin{DoxyCompactList}\small\item\em Inizializza la posizione SDL\+\_\+\+Rect. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sottoprogrammi_8hpp_a96ca5c270cf608055501de1a5e03b3be}{Inizialize\+Surface}} (int \texorpdfstring{$\ast$}{*}r, const char \texorpdfstring{$\ast$}{*}surface)
+\begin{DoxyCompactList}\small\item\em Inizializza una surface SDL. \end{DoxyCompactList}\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{sottoprogrammi_8hpp_ab8f35fa6732eadcb5341a4099a9aa250}{Inizialize\+Texture}} (int \texorpdfstring{$\ast$}{*}r, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}surface)
+\begin{DoxyCompactList}\small\item\em Inizializza una texture SDL. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_object}{Object}} \mbox{\hyperlink{sottoprogrammi_8hpp_a3fd5a134087fd9ae1c0bf1daa2e625e2}{Initialize\+Object}} (int \texorpdfstring{$\ast$}{*}r, const char \texorpdfstring{$\ast$}{*}surface, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, const char \texorpdfstring{$\ast$}{*}stampa)
+\begin{DoxyCompactList}\small\item\em Inizializza un oggetto grafico. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_character}{Character}} \mbox{\hyperlink{sottoprogrammi_8hpp_a1bee851cf4f96b747fb77441c78b9017}{Inizialize\+Character}} (int \texorpdfstring{$\ast$}{*}riuscita, const char \texorpdfstring{$\ast$}{*}surface, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Rect position, const char \texorpdfstring{$\ast$}{*}stampa)
+\begin{DoxyCompactList}\small\item\em Inizializza un personaggio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_life_bar}{Life\+Bar}} \mbox{\hyperlink{sottoprogrammi_8hpp_ad338f7d82b4d7b7d351a6e90b58977f2}{Inizialaze\+Life\+Bar}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, const char \texorpdfstring{$\ast$}{*}frame\+Img\+Path, SDL\+\_\+\+Rect position, const char \texorpdfstring{$\ast$}{*}background\+Img\+Path, const char \texorpdfstring{$\ast$}{*}life\+Img\+Path)
+\begin{DoxyCompactList}\small\item\em Inizializza la barra della vita. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sottoprogrammi_8hpp_aa7d03efd0ff043f31d0f069ae97fbab8}{Render\+Life\+Bar}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}backgroundT, SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}backgroundP, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}life\+OBJT, SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}life\+OBJP, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}frameT, SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}frameP)
+\begin{DoxyCompactList}\small\item\em Renderizza la barra della vita sullo schermo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sottoprogrammi_8hpp_ab7b975a9235dd854d750cd3e3df83d2c}{imposta\+Delay\+Proiettili}} (std\+::string difficulty)
+\begin{DoxyCompactList}\small\item\em Imposta un ritardo casuale per la sparizione dei proiettili nemici. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{sottoprogrammi_8hpp_ab44967bc291f396e0645f33da9cb138e}{imposta\+Difficolta}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, \mbox{\hyperlink{class_object}{Object}} scene)
+\begin{DoxyCompactList}\small\item\em Imposta la difficoltà del gioco. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{sottoprogrammi_8hpp_a8142262090c2bae408d3aafb33b4bfce}{attendi\+Input}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, const \mbox{\hyperlink{class_object}{Object}} \&final\+Scene, \mbox{\hyperlink{class_text_renderer}{Text\+Renderer}} \&final\+Text, int n\+Enemies, int width, int height, \mbox{\hyperlink{constants_8hpp_a881b49e3802366255ad852f1c8624fd1}{Game\+Status}} game\+Status)
+\begin{DoxyCompactList}\small\item\em Attende l\textquotesingle{}input tra 2 tasti (Y o Q). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{sottoprogrammi_8hpp_ab821bcb3404d041ded1a024e3c3498aa}{spawn\+New\+Enemy}} (std\+::vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ \&enemies, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int enemyX, int enemyY, int bullet\+Speed, int width, int height)
+\begin{DoxyCompactList}\small\item\em Crea un nuovo nemico e lo aggiunge al vettore dei nemici. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contiene le dichiarazioni delle funzioni ausiliarie. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sottoprogrammi_8hpp_a8142262090c2bae408d3aafb33b4bfce}\label{sottoprogrammi_8hpp_a8142262090c2bae408d3aafb33b4bfce} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!attendiInput@{attendiInput}}
+\index{attendiInput@{attendiInput}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{attendiInput()}{attendiInput()}}
+{\footnotesize\ttfamily bool attendi\+Input (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const \mbox{\hyperlink{class_object}{Object}} \&}]{final\+Scene,  }\item[{\mbox{\hyperlink{class_text_renderer}{Text\+Renderer}} \&}]{final\+Text,  }\item[{int}]{n\+Enemies,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{\mbox{\hyperlink{constants_8hpp_a881b49e3802366255ad852f1c8624fd1}{Game\+Status}}}]{game\+Status }\end{DoxyParamCaption})}
+
+
+
+Attende l\textquotesingle{}input tra 2 tasti (Y o Q). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em final\+Scene} & Indica la scena da renderizzare. \\
+\hline
+{\em final\+Text} & Indica il testo da stampare \\
+\hline
+{\em n\+Enemies} & Indica i nemici uccisi (usato da final\+Text) \\
+\hline
+{\em width} & Indica la larghezza della finestra creata (usato da final\+Text) \\
+\hline
+{\em height} & Indica l\textquotesingle{}altezza della finestra creata (usato da final\+Text) \\
+\hline
+{\em game\+Status} & Flag per indicare se renderizzare final\+Text \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sottoprogrammi_8hpp_a26fffa61de74b3723ea64060bb5f7402}\label{sottoprogrammi_8hpp_a26fffa61de74b3723ea64060bb5f7402} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!free\_args@{free\_args}}
+\index{free\_args@{free\_args}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{free\_args()}{free\_args()}}
+{\footnotesize\ttfamily void free\+\_\+args (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+args,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+
+
+Libera la memoria allocata per gli argomenti passati alle funzioni. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+args} & Il numero di argomenti passati alla funzione. \\
+\hline
+{\em ...} & Gli argomenti da liberare. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sottoprogrammi_8hpp_ab7b975a9235dd854d750cd3e3df83d2c}\label{sottoprogrammi_8hpp_ab7b975a9235dd854d750cd3e3df83d2c} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!impostaDelayProiettili@{impostaDelayProiettili}}
+\index{impostaDelayProiettili@{impostaDelayProiettili}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{impostaDelayProiettili()}{impostaDelayProiettili()}}
+{\footnotesize\ttfamily int imposta\+Delay\+Proiettili (\begin{DoxyParamCaption}\item[{std\+::string}]{difficulty }\end{DoxyParamCaption})}
+
+
+
+Imposta un ritardo casuale per la sparizione dei proiettili nemici. 
+
+\begin{DoxyReturn}{Returns}
+Il ritardo casuale in millisecondi. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em difficulty} & Indica la difficoltà scelta dal giocatore \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sottoprogrammi_8hpp_ab44967bc291f396e0645f33da9cb138e}\label{sottoprogrammi_8hpp_ab44967bc291f396e0645f33da9cb138e} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!impostaDifficolta@{impostaDifficolta}}
+\index{impostaDifficolta@{impostaDifficolta}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{impostaDifficolta()}{impostaDifficolta()}}
+{\footnotesize\ttfamily string imposta\+Difficolta (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{\mbox{\hyperlink{class_object}{Object}}}]{scene }\end{DoxyParamCaption})}
+
+
+
+Imposta la difficoltà del gioco. 
+
+\begin{DoxyReturn}{Returns}
+La difficoltà del gioco (easy, medium, hard) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL \\
+\hline
+{\em scene} & Indica la scena da mostrare \\
+\hline
+\end{DoxyParams}
+\Hypertarget{sottoprogrammi_8hpp_a3fd5a134087fd9ae1c0bf1daa2e625e2}\label{sottoprogrammi_8hpp_a3fd5a134087fd9ae1c0bf1daa2e625e2} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InitializeObject@{InitializeObject}}
+\index{InitializeObject@{InitializeObject}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InitializeObject()}{InitializeObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_object}{Object}} Initialize\+Object (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{r,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{surface,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{stampa }\end{DoxyParamCaption})}
+
+
+
+Inizializza un oggetto grafico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Puntatore a una variabile per memorizzare l\textquotesingle{}esito dell\textquotesingle{}inizializzazione. \\
+\hline
+{\em surface} & Il percorso del file BMP contenente l\textquotesingle{}immagine. \\
+\hline
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em stampa} & Una stringa identificativa per scopi di debug. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}oggetto grafico inizializzato. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_ad338f7d82b4d7b7d351a6e90b58977f2}\label{sottoprogrammi_8hpp_ad338f7d82b4d7b7d351a6e90b58977f2} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InizialazeLifeBar@{InizialazeLifeBar}}
+\index{InizialazeLifeBar@{InizialazeLifeBar}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InizialazeLifeBar()}{InizialazeLifeBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_life_bar}{Life\+Bar}} Inizialaze\+Life\+Bar (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{frame\+Img\+Path,  }\item[{SDL\+\_\+\+Rect}]{position,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{background\+Img\+Path,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{life\+Img\+Path }\end{DoxyParamCaption})}
+
+
+
+Inizializza la barra della vita. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em frame\+Img\+Path} & Il percorso del file BMP contenente l\textquotesingle{} \\
+\hline
+{\em position} & La posizione della barra sulla finestra di gioco. \\
+\hline
+{\em background\+Img\+Path} & Il percorso del file BMP contenente l\textquotesingle{}immagine di sfondo della barra. \\
+\hline
+{\em life\+Img\+Path} & Il percorso del file BMP contenente l\textquotesingle{}immagine della vita nella barra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La struttura \doxylink{class_life_bar}{Life\+Bar} inizializzata. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_a1bee851cf4f96b747fb77441c78b9017}\label{sottoprogrammi_8hpp_a1bee851cf4f96b747fb77441c78b9017} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InizializeCharacter@{InizializeCharacter}}
+\index{InizializeCharacter@{InizializeCharacter}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InizializeCharacter()}{InizializeCharacter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_character}{Character}} Inizialize\+Character (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{riuscita,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{surface,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Rect}]{position,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{stampa }\end{DoxyParamCaption})}
+
+
+
+Inizializza un personaggio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em riuscita} & Puntatore a una variabile per memorizzare l\textquotesingle{}esito dell\textquotesingle{}inizializzazione. \\
+\hline
+{\em surface} & Il percorso del file BMP contenente l\textquotesingle{}immagine del personaggio. \\
+\hline
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em position} & La posizione iniziale del personaggio. \\
+\hline
+{\em stampa} & Una stringa identificativa per scopi di debug. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Il personaggio inizializzato. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_ae76c218d4b1a1e51f2e926ef840d098d}\label{sottoprogrammi_8hpp_ae76c218d4b1a1e51f2e926ef840d098d} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InizializePosition@{InizializePosition}}
+\index{InizializePosition@{InizializePosition}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InizializePosition()}{InizializePosition()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Inizialize\+Position (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Rect}]{position }\end{DoxyParamCaption})}
+
+
+
+Inizializza la posizione SDL\+\_\+\+Rect. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & La SDL\+\_\+\+Rect da inizializzare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La SDL\+\_\+\+Rect inizializzata. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_a96ca5c270cf608055501de1a5e03b3be}\label{sottoprogrammi_8hpp_a96ca5c270cf608055501de1a5e03b3be} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InizializeSurface@{InizializeSurface}}
+\index{InizializeSurface@{InizializeSurface}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InizializeSurface()}{InizializeSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*} Inizialize\+Surface (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{r,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{surface }\end{DoxyParamCaption})}
+
+
+
+Inizializza una surface SDL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Puntatore a una variabile per memorizzare l\textquotesingle{}esito dell\textquotesingle{}inizializzazione. \\
+\hline
+{\em surface} & Il percorso del file BMP contenente l\textquotesingle{}immagine. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La surface SDL inizializzata. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_ab8f35fa6732eadcb5341a4099a9aa250}\label{sottoprogrammi_8hpp_ab8f35fa6732eadcb5341a4099a9aa250} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!InizializeTexture@{InizializeTexture}}
+\index{InizializeTexture@{InizializeTexture}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{InizializeTexture()}{InizializeTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Inizialize\+Texture (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{r,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Surface \texorpdfstring{$\ast$}{*}}]{surface }\end{DoxyParamCaption})}
+
+
+
+Inizializza una texture SDL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Puntatore a una variabile per memorizzare l\textquotesingle{}esito dell\textquotesingle{}inizializzazione. \\
+\hline
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em surface} & La surface SDL da cui creare la texture. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La texture SDL inizializzata. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_aa7d03efd0ff043f31d0f069ae97fbab8}\label{sottoprogrammi_8hpp_aa7d03efd0ff043f31d0f069ae97fbab8} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!RenderLifeBar@{RenderLifeBar}}
+\index{RenderLifeBar@{RenderLifeBar}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{RenderLifeBar()}{RenderLifeBar()}}
+{\footnotesize\ttfamily int Render\+Life\+Bar (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{backgroundT,  }\item[{SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}}]{backgroundP,  }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{life\+OBJT,  }\item[{SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}}]{life\+OBJP,  }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{frameT,  }\item[{SDL\+\_\+\+Rect \texorpdfstring{$\ast$}{*}}]{frameP }\end{DoxyParamCaption})}
+
+
+
+Renderizza la barra della vita sullo schermo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Il renderer SDL. \\
+\hline
+{\em backgroundT} & La texture dell\textquotesingle{}immagine di sfondo della barra. \\
+\hline
+{\em backgroundP} & La posizione dell\textquotesingle{}immagine di sfondo sulla finestra di gioco. \\
+\hline
+{\em life\+OBJT} & La texture dell\textquotesingle{}immagine della vita nella barra. \\
+\hline
+{\em life\+OBJP} & La posizione dell\textquotesingle{}immagine della vita sulla finestra di gioco. \\
+\hline
+{\em frameT} & La texture dell\textquotesingle{}immagine del frame della barra. \\
+\hline
+{\em frameP} & La posizione dell\textquotesingle{}immagine del frame sulla finestra di gioco. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se il rendering è avvenuto con successo, -\/1 altrimenti. 
+\end{DoxyReturn}
+\Hypertarget{sottoprogrammi_8hpp_ab821bcb3404d041ded1a024e3c3498aa}\label{sottoprogrammi_8hpp_ab821bcb3404d041ded1a024e3c3498aa} 
+\index{sottoprogrammi.hpp@{sottoprogrammi.hpp}!spawnNewEnemy@{spawnNewEnemy}}
+\index{spawnNewEnemy@{spawnNewEnemy}!sottoprogrammi.hpp@{sottoprogrammi.hpp}}
+\doxysubsubsection{\texorpdfstring{spawnNewEnemy()}{spawnNewEnemy()}}
+{\footnotesize\ttfamily void spawn\+New\+Enemy (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $>$ \&}]{enemies,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{int}]{enemyX,  }\item[{int}]{enemyY,  }\item[{int}]{bullet\+Speed,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Crea un nuovo nemico e lo aggiunge al vettore dei nemici. 
+
+Questo metodo crea un nuovo nemico con i parametri specificati e lo aggiunge al vettore dei nemici passato come argomento. Inoltre, incrementa il valore di n\+Enemies passato come puntatore per tener traccia del numero totale di nemici.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em enemies} & Il vettore dei nemici a cui aggiungere il nuovo nemico. \\
+\hline
+\mbox{\texttt{ in}}  & {\em renderer} & Il puntatore al renderer SDL utilizzato per il rendering del gioco. \\
+\hline
+\mbox{\texttt{ in}}  & {\em enemyX} & La coordinata x iniziale del nuovo nemico. \\
+\hline
+\mbox{\texttt{ in}}  & {\em enemyY} & La coordinata y iniziale del nuovo nemico. \\
+\hline
+\mbox{\texttt{ in}}  & {\em bullet\+Speed} & La velocità dei proiettili sparati dal nemico. \\
+\hline
+\mbox{\texttt{ in}}  & {\em width} & La larghezza del nemico. \\
+\hline
+\mbox{\texttt{ in}}  & {\em height} & L\textquotesingle{}altezza del nemico. \\
+\hline
+\end{DoxyParams}

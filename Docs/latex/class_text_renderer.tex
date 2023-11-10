@@ -1,0 +1,110 @@
+\doxysection{Text\+Renderer Class Reference}
+\hypertarget{class_text_renderer}{}\label{class_text_renderer}\index{TextRenderer@{TextRenderer}}
+
+
+Classe utile per la gestione di un testo SDL\+\_\+ttf.  
+
+
+
+
+{\ttfamily \#include $<$text.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text_renderer_a0444b2f5c44a985c4cc3bb9edf44c649}{Text\+Renderer}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, const std\+::string \&font\+Path, int font\+Size)
+\begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{class_text_renderer}{Text\+Renderer}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text_renderer_a7087505bdc31e41416408c27fe029f20}{\texorpdfstring{$\sim$}{\string~}\+Text\+Renderer}} ()
+\begin{DoxyCompactList}\small\item\em Distruttore della classe \doxylink{class_text_renderer}{Text\+Renderer}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_renderer_ad6ddd20ea1eb28be4d6bd4b15a4887c5}{load\+Font}} (const std\+::string \&font\+Path, int font\+Size)
+\begin{DoxyCompactList}\small\item\em Carica un font True\+Type (TTF) dal percorso specificato e imposta la dimensione del font. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_text_renderer_a63f62653a36f84c82ed08c9a33162d6b}{render\+Text}} (const std\+::string \&text, int x, int y, SDL\+\_\+\+Color color)
+\begin{DoxyCompactList}\small\item\em Renderizza il testo specificato sulla finestra associata al renderer nelle coordinate specificate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe utile per la gestione di un testo SDL\+\_\+ttf. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_text_renderer_a0444b2f5c44a985c4cc3bb9edf44c649}\label{class_text_renderer_a0444b2f5c44a985c4cc3bb9edf44c649} 
+\index{TextRenderer@{TextRenderer}!TextRenderer@{TextRenderer}}
+\index{TextRenderer@{TextRenderer}!TextRenderer@{TextRenderer}}
+\doxysubsubsection{\texorpdfstring{TextRenderer()}{TextRenderer()}}
+{\footnotesize\ttfamily Text\+Renderer\+::\+Text\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{const std\+::string \&}]{font\+Path,  }\item[{int}]{font\+Size }\end{DoxyParamCaption})}
+
+
+
+Costruttore della classe \doxylink{class_text_renderer}{Text\+Renderer}. 
+
+Questo costruttore crea un oggetto \doxylink{class_text_renderer}{Text\+Renderer} con il renderer SDL specificato, caricando il font dal percorso specificato e impostando la dimensione del font.
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & Puntatore all\textquotesingle{}oggetto SDL\+\_\+\+Renderer dove disegnare il testo. \\
+\hline
+{\em font\+Path} & Il percorso del file del font True\+Type (TTF) da caricare. \\
+\hline
+{\em font\+Size} & La dimensione del font da utilizzare per il testo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_renderer_a7087505bdc31e41416408c27fe029f20}\label{class_text_renderer_a7087505bdc31e41416408c27fe029f20} 
+\index{TextRenderer@{TextRenderer}!````~TextRenderer@{\texorpdfstring{$\sim$}{\string~}TextRenderer}}
+\index{````~TextRenderer@{\texorpdfstring{$\sim$}{\string~}TextRenderer}!TextRenderer@{TextRenderer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TextRenderer()}{\string~TextRenderer()}}
+{\footnotesize\ttfamily Text\+Renderer\+::\texorpdfstring{$\sim$}{\string~}\+Text\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Distruttore della classe \doxylink{class_text_renderer}{Text\+Renderer}. 
+
+Questo distruttore libera le risorse allocate per il font. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_text_renderer_ad6ddd20ea1eb28be4d6bd4b15a4887c5}\label{class_text_renderer_ad6ddd20ea1eb28be4d6bd4b15a4887c5} 
+\index{TextRenderer@{TextRenderer}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!TextRenderer@{TextRenderer}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily void Text\+Renderer\+::load\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Path,  }\item[{int}]{font\+Size }\end{DoxyParamCaption})}
+
+
+
+Carica un font True\+Type (TTF) dal percorso specificato e imposta la dimensione del font. 
+
+Questo metodo carica il font dal file TTF specificato nel percorso e imposta la dimensione del font per il rendering del testo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Path} & Il percorso del file del font True\+Type (TTF) da caricare. \\
+\hline
+{\em font\+Size} & La dimensione del font da utilizzare per il testo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_text_renderer_a63f62653a36f84c82ed08c9a33162d6b}\label{class_text_renderer_a63f62653a36f84c82ed08c9a33162d6b} 
+\index{TextRenderer@{TextRenderer}!renderText@{renderText}}
+\index{renderText@{renderText}!TextRenderer@{TextRenderer}}
+\doxysubsubsection{\texorpdfstring{renderText()}{renderText()}}
+{\footnotesize\ttfamily void Text\+Renderer\+::render\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{SDL\+\_\+\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Renderizza il testo specificato sulla finestra associata al renderer nelle coordinate specificate. 
+
+Questo metodo renderizza il testo specificato sulla finestra associata al renderer nelle coordinate (x, y) specificate con il colore specificato.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & La stringa di testo da renderizzare. \\
+\hline
+{\em x} & La coordinata x in cui posizionare il testo sulla finestra. \\
+\hline
+{\em y} & La coordinata y in cui posizionare il testo sulla finestra. \\
+\hline
+{\em color} & Il colore del testo, specificato come un oggetto SDL\+\_\+\+Color. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/text/\mbox{\hyperlink{text_8hpp}{text.\+hpp}}\item 
+C\+:/\+Users/luigi/\+One\+Drive/\+Documenti/\+Programmazione/cpp/\+Shooting/include/text/text.\+cpp\end{DoxyCompactItemize}

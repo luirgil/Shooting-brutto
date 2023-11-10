@@ -1,0 +1,30 @@
+\doxysection{bullet.\+hpp}
+\hypertarget{bullet_8hpp_source}{}\label{bullet_8hpp_source}\index{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/bullet/bullet.hpp@{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/bullet/bullet.hpp}}
+\mbox{\hyperlink{bullet_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ BULLET\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ BULLET\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL\_ttf.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL\_mixer.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL\_image.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bullet}{Bullet}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_bullet_a33daffc5bfc9f9aed0fddbe39add5953}{position}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_bullet_a110bd4348fc7547125b4ec4bbf94d5f5}{speed}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_bullet_a31db736d795132660a8fa55400b723ab}{texture}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bullet_a0dee6bed7c3a0ecba4861723f8e462e7}{isActive}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bullet_a10bf38b081c3e2f99685a8bd30b243bd}{canDamage}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_bullet}{Bullet}}(SDL\_Renderer*\ renderer,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ bulletSpeed,\ \textcolor{keywordtype}{int}\ SCREENWIDTH,\ \textcolor{keywordtype}{int}\ SCREENHEIGHT,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ imagePath);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bullet_a7a21e5f9176f5b30abde3279cffe4237}{Update}}(\textcolor{keywordtype}{int}\ screenWidth);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bullet_ac41272ca6ff50d425e26ac5d01e5af4a}{Render}}(SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BULLET\_H}}
+
+\end{DoxyCode}

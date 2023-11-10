@@ -1,0 +1,47 @@
+\doxysection{enemy.\+hpp}
+\hypertarget{enemy_8hpp_source}{}\label{enemy_8hpp_source}\index{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/enemy/enemy.hpp@{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/enemy/enemy.hpp}}
+\mbox{\hyperlink{enemy_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ENEMY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ENEMY\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../bullet/bullet.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../constants/constants.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}../lifeBar/lifeBar.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}../character/character.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character}{Character}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enemy}{Enemy}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_enemy}{Enemy}}(SDL\_Renderer*\ renderer,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ bulletSpeed,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3}{SCREENWIDTH}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0}{SCREENHEIGHT}},\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ imagePath);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a49ad94a75be6cf3956565704b6d53c90}{ShootBullet}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ imagePath);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_ad562c24d8ba0e6bdaf85f045ef03fe8d}{UpdateBullet}}(\textcolor{keywordtype}{int}\ screenWidth);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_affd7dd3883c7bfede0b7c4c0fe95909d}{Render}}(SDL\_Renderer*\ renderer);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_enemy_a9c341849286f5dd446b73b5eb646fc80}{CheckBulletCollisionEnemy}}(\mbox{\hyperlink{class_character}{Character}}\&\ character);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a354e403b5b4a4bde02990a22a471924c}{updateLifeBar}}(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a5b27996c6bd6d4b9e6d05a34c1394ed7}{lastShotTimeEnemy}};\ }
+\DoxyCodeLine{00069\ \ \ \ \ SDL\_Rect\ \mbox{\hyperlink{class_enemy_ac364f2ddf130c8622889deca0b6ba4d0}{position}};\ }
+\DoxyCodeLine{00070\ \ \ \ \ SDL\_Texture*\ \mbox{\hyperlink{class_enemy_aff58327574bd0e2b496d9d4fb3609dfd}{texture}};\ }
+\DoxyCodeLine{00071\ \ \ \ \ std::vector<Bullet>\ \mbox{\hyperlink{class_enemy_aa6906ce0f0c1ac033997feacb17978d9}{bullets}};\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_enemy_a251000c8351c354a835601e9fe2d57d0}{canShoot}};\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a6091c94dbb2017ae60c8e513e6a66be1}{speed}};\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a96a2efe06a2a848c6f5e5e2291d697f3}{SCREENWIDTH}};\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_ae22b8ee386d6c05b2a187c1a73240dd0}{SCREENHEIGHT}};\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_life_bar}{LifeBar}}\ \mbox{\hyperlink{class_enemy_ae6da4894d4710169f9f15ee862e3a362}{lifebar}};\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_enemy_a33b786508e49b55775c78066992b47af}{delayShootEnemyBool}};\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a392804ac6c25bc46835348ecbedf0592}{delayShootEnemy}};\ }
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ENEMY\_H}}
+
+\end{DoxyCode}

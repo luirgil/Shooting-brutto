@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\main.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\main.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/main.cpp",
+  "output": "CMakeFiles/Shooting.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\bullet\\bullet.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\bullet\\bullet.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/bullet/bullet.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/bullet/bullet.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\character\\character.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\character\\character.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/character/character.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/character/character.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\enemy\\enemy.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\enemy\\enemy.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/enemy/enemy.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/enemy/enemy.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\lifeBar\\lifeBar.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\lifeBar\\lifeBar.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/lifeBar/lifeBar.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/lifeBar/lifeBar.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\object\\object.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\object\\object.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/object/object.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/object/object.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\sottoprogrammi\\sottoprogrammi.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\sottoprogrammi\\sottoprogrammi.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/sottoprogrammi/sottoprogrammi.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/sottoprogrammi/sottoprogrammi.cpp.obj"
+},
+{
+  "directory": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/build",
+  "command": "C:\\MinGW\\bin\\clang++.exe  @CMakeFiles/Shooting.dir/includes_CXX.rsp -g -o CMakeFiles\\Shooting.dir\\include\\text\\text.cpp.obj -c C:\\Users\\luigi\\OneDrive\\Documenti\\Programmazione\\cpp\\Shooting\\include\\text\\text.cpp",
+  "file": "C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/text/text.cpp",
+  "output": "CMakeFiles/Shooting.dir/include/text/text.cpp.obj"
+}
+]

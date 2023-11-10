@@ -1,0 +1,29 @@
+\doxysection{text.\+hpp}
+\hypertarget{text_8hpp_source}{}\label{text_8hpp_source}\index{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/text/text.hpp@{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/text/text.hpp}}
+\mbox{\hyperlink{text_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TEXT\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TEXT\_HPP}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../sdl/include/SDL2/SDL\_ttf.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text_renderer}{TextRenderer}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_text_renderer}{TextRenderer}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ std::string\&\ fontPath,\ \textcolor{keywordtype}{int}\ fontSize);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_text_renderer_a7087505bdc31e41416408c27fe029f20}{\string~TextRenderer}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_renderer_ad6ddd20ea1eb28be4d6bd4b15a4887c5}{loadFont}}(\textcolor{keyword}{const}\ std::string\&\ fontPath,\ \textcolor{keywordtype}{int}\ fontSize);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_text_renderer_a63f62653a36f84c82ed08c9a33162d6b}{renderText}}(\textcolor{keyword}{const}\ std::string\&\ text,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ SDL\_Color\ color);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00062\ \ \ \ \ TTF\_Font*\ font;}
+\DoxyCodeLine{00063\ \ \ \ \ SDL\_Renderer*\ renderer;}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TEXT\_HPP}}
+
+\end{DoxyCode}

@@ -1,0 +1,14 @@
+PROJECT_NAME           = "Shooting Brutto"
+OUTPUT_DIRECTORY       = ../Docs
+INPUT                  = ../include\bullet \
+                         ../include\character \
+                         ../include\constants \
+                         ../include\enemy \
+                         ../include\lifeBar \
+                         ../include\object \
+                         ../include\sottoprogrammi \
+                         ../include\text \
+                         ../include\Introduction.txt
+
+RECURSIVE              = YES
+GENERATE_HTML          = YES

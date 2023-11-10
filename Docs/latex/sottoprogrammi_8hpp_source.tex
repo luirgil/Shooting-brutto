@@ -1,0 +1,47 @@
+\doxysection{sottoprogrammi.\+hpp}
+\hypertarget{sottoprogrammi_8hpp_source}{}\label{sottoprogrammi_8hpp_source}\index{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/sottoprogrammi/sottoprogrammi.hpp@{C:/Users/luigi/OneDrive/Documenti/Programmazione/cpp/Shooting/include/sottoprogrammi/sottoprogrammi.hpp}}
+\mbox{\hyperlink{sottoprogrammi_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ SOTTOPROGRAMMI\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ SOTTOPROGRAMMI\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SDL.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../object/object.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../character/character.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}../enemy/enemy.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <SDL\_ttf.h>}}
+\DoxyCodeLine{00015\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_character}{Character}};}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enemy}{Enemy}};}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_text_renderer}{TextRenderer}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sottoprogrammi_8hpp_a26fffa61de74b3723ea64060bb5f7402}{free\_args}}(\textcolor{keywordtype}{int}\ num\_args,\ ...);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00032\ SDL\_Rect\ \mbox{\hyperlink{sottoprogrammi_8hpp_ae76c218d4b1a1e51f2e926ef840d098d}{InizializePosition}}(SDL\_Rect\ position);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00040\ SDL\_Surface*\ \mbox{\hyperlink{sottoprogrammi_8hpp_a96ca5c270cf608055501de1a5e03b3be}{InizializeSurface}}(\textcolor{keywordtype}{int}\ *r,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ surface);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ SDL\_Texture*\ \mbox{\hyperlink{sottoprogrammi_8hpp_ab8f35fa6732eadcb5341a4099a9aa250}{InizializeTexture}}(\textcolor{keywordtype}{int}\ *r,\ SDL\_Renderer*\ renderer,\ SDL\_Surface*\ surface);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00059\ \mbox{\hyperlink{class_object}{Object}}\ \mbox{\hyperlink{sottoprogrammi_8hpp_a3fd5a134087fd9ae1c0bf1daa2e625e2}{InitializeObject}}(\textcolor{keywordtype}{int}\ *r,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ surface,\ SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ stampa);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00070\ \mbox{\hyperlink{class_character}{Character}}\ \mbox{\hyperlink{sottoprogrammi_8hpp_a1bee851cf4f96b747fb77441c78b9017}{InizializeCharacter}}(\textcolor{keywordtype}{int}*\ riuscita,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ surface,\ SDL\_Renderer*\ renderer,\ SDL\_Rect\ position,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ stampa);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00081\ \mbox{\hyperlink{class_life_bar}{LifeBar}}\ \mbox{\hyperlink{sottoprogrammi_8hpp_ad338f7d82b4d7b7d351a6e90b58977f2}{InizialazeLifeBar}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ frameImgPath,\ SDL\_Rect\ position,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ backgroundImgPath,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ lifeImgPath);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sottoprogrammi_8hpp_aa7d03efd0ff043f31d0f069ae97fbab8}{RenderLifeBar}}(SDL\_Renderer*\ renderer,\ SDL\_Texture*\ backgroundT,\ SDL\_Rect*\ backgroundP,\ SDL\_Texture*\ lifeOBJT,\ SDL\_Rect*\ lifeOBJP,\ SDL\_Texture*\ frameT,\ SDL\_Rect*\ frameP);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{sottoprogrammi_8hpp_ab7b975a9235dd854d750cd3e3df83d2c}{impostaDelayProiettili}}(std::string\ difficulty);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{sottoprogrammi_8hpp_ab44967bc291f396e0645f33da9cb138e}{impostaDifficolta}}(SDL\_Renderer\ *renderer,\ \mbox{\hyperlink{class_object}{Object}}\ scene);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00121\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{sottoprogrammi_8hpp_a8142262090c2bae408d3aafb33b4bfce}{attendiInput}}(SDL\_Renderer*\ renderer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_object}{Object}}\&\ finalScene,\ \mbox{\hyperlink{class_text_renderer}{TextRenderer}}\&\ finalText,\ \textcolor{keywordtype}{int}\ nEnemies,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \mbox{\hyperlink{constants_8hpp_a881b49e3802366255ad852f1c8624fd1}{GameStatus}}\ gameStatus);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00136\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{sottoprogrammi_8hpp_ab821bcb3404d041ded1a024e3c3498aa}{spawnNewEnemy}}(std::vector<Enemy>\&\ enemies,\ SDL\_Renderer*\ renderer,\ \textcolor{keywordtype}{int}\ enemyX,\ \textcolor{keywordtype}{int}\ enemyY,\ \textcolor{keywordtype}{int}\ bulletSpeed,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SOTTOPROGRAMMI\_H}}
+
+\end{DoxyCode}

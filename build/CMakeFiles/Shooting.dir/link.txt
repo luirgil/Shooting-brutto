@@ -1,0 +1,3 @@
+C:\MinGW\bin\cmake.exe -E rm -f CMakeFiles\Shooting.dir/objects.a
+C:\MinGW\bin\llvm-ar.exe qc CMakeFiles\Shooting.dir/objects.a @CMakeFiles\Shooting.dir\objects1.rsp
+C:\MinGW\bin\clang++.exe -g -Wl,--whole-archive CMakeFiles\Shooting.dir/objects.a -Wl,--no-whole-archive -o Shooting.exe -Wl,--out-implib,libShooting.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Shooting.dir\linkLibs.rsp

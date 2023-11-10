@@ -1,0 +1,11 @@
+/**
+ * @mainpage Introduzione al progetto 
+ * Shooting Brutto. Version 0.1 <br/>
+ * Primo Gioco in assoluto creato usando la libreria SDL2 <br/>
+ * Linguaggi usati: C/C++ <br/>
+ * Libreria SDL2 già presente nella cartella <br/>
+ * Sprites Rubati su internet (i primi che capitavano lol) <br/>
+ * !IMPORTANTE! <br/>
+ * Abbiate installato MinGW e settato nelle variablil d'ambiente prima di eseguire il programma altrimenti non si avvierà <br/>
+ * Email: luigiantonioedeidda@gmail.com
+ */
